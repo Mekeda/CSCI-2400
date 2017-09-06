@@ -1,0 +1,964 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Helvetica{\*\falt Arial};}{\f6\froman\fprq2\fcharset0 Times-Roman{\*\falt Times New Roman};}{\f7\fnil\fprq2\fcharset0 Noto Sans CJK SC Regular;}{\f8\fnil\fprq2\fcharset0 FreeSans;}{\f9\fswiss\fprq0\fcharset128 FreeSans;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\*\cs15\snext15\cf9\ul\ulc0\langfe255\alang255\lang255 Internet Link;}
+{\s16\sbasedon0\snext17\sb240\sa120\keepn\dbch\af7\dbch\af8\afs28\loch\f4\fs28 Heading;}
+{\s17\sbasedon0\snext17\sl288\slmult1\sb0\sa140 Text Body;}
+{\s18\sbasedon17\snext18\sl288\slmult1\sb0\sa140\dbch\af9 List;}
+{\s19\sbasedon0\snext19\sb120\sa120\noline\i\dbch\af9\afs24\ai\fs24 Caption;}
+{\s20\sbasedon0\snext20\noline\dbch\af9 Index;}
+}{\*\generator LibreOffice/5.1.4.2$Linux_X86_64 LibreOffice_project/10m0$Build-2}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr2016\mo10\dy3\hr4\min28}{\printim\yr0\mo0\dy0\hr0\min0}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep}\pgndec\pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Basically just type strings bomb to see all the strings of the function, you will be able to find this string very easy this way. Otherwise on line 4, x/s (examine string maybe?) the memory address being moved to %esi, and it has the string stored in it.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Dump of assembler code for function phase_1:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fa0 <+0>:\tab         push   %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fa1 <+1>:\tab         mov    %rsp,%rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fa4 <+4>:\tab         mov    $0x4027d0,%esi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fa9 <+9>:\tab         callq  0x40147d <strings_not_equal>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fae <+14>:\tab         test   %eax,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fb0 <+16>:\tab         je     0x400fb7 <phase_1+23>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fb2 <+18>:\tab         callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fb7 <+23>:\tab         pop    %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fb8 <+24>:\tab         retq   }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+End of assembler dump.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+ }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+= \u8220\'93Brownie, you are doing a heck of a job."}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+*******************************************************************************************************************}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+This one has a loop between lines 33 and 61 comparing the values in two registers. If they are equal, the bomb won't explode. If they aren't equal, the bomb will detonate. At line 400fcd we can see the first number must be 0. It's comparing rbp to $0x0. Once that is true it jumps to 65, which will then store some values and move some around and start the loop over (I assume it's iterating through our input at the end of the loop). It compares r 12 (our input) to eax (the stored answers) for each iteration of the loop.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Dump of assembler code for function phase_2:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fb9 <+0>:\tab         push   %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fba <+1>:\tab         mov    %rsp,%rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fbd <+4>:\tab         push   %r12}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fbf <+6>:\tab         push   %rbx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fc0 <+7>:\tab         sub    $0x20,%rsp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fc4 <+11>:\tab         lea    -0x30(%rbp),%rsi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fc8 <+15>:\tab         callq  0x4017ab <read_six_numbers>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fcd <+20>:\tab         cmpl   $0x0,-0x30(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fd1 <+24>:\tab         jns    0x400ffa <phase_2+65>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fd3 <+26>:\tab         callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fd8 <+31>:\tab         jmp    0x400ffa <phase_2+65>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fda <+33>:\tab         mov    %ebx,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fdc <+35>:\tab         add    -0x4(%r12),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fe1 <+40>:\tab         cmp    %eax,(%r12)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fe5 <+44>:\tab         je     0x400fec <phase_2+51>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fe7 <+46>:\tab         callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fec <+51>:\tab         add    $0x1,%ebx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400fef <+54>:\tab         add    $0x4,%r12}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400ff3 <+58>:\tab         cmp    $0x6,%ebx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400ff6 <+61>:\tab         jne    0x400fda <phase_2+33>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400ff8 <+63>:\tab         jmp    0x401005 <phase_2+76>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400ffa <+65>:\tab         lea    -0x2c(%rbp),%r12}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000400ffe <+69>:\tab         mov    $0x1,%ebx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401003 <+74>:  \tab         jmp    0x400fda <phase_2+33>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401005 <+76>:\tab         add    $0x20,%rsp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401009 <+80>:\tab         pop    %rbx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040100a <+81>:\tab         pop    %r12}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040100c <+83>:\tab         pop    %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040100d <+84>:\tab         retq   }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+End of assembler dump.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+= \u8220\'930 1 3 6 10 15"}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+*******************************************************************************************************************}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Explanation here}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{{\field{\*\fldinst HYPERLINK "http://stackoverflow.com/questions/19640148/binary-bomb-phase-4" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\cf1\ul\ulc0\rtlch \ltrch\loch\fs24\loch\f5
+http://stackoverflow.com/questions/19640148/binary-bomb-phase-4}}}}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{{\field{\*\fldinst HYPERLINK "http://stackoverflow.com/questions/26315403/bomb-lab-phase-4" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\cf1\ul\ulc0\rtlch \ltrch\loch\fs24\loch\f5
+http://stackoverflow.com/questions/26315403/bomb-lab-phase-4}}}}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f6
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Dump of assembler code for function phase_3:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040100e <+0>:\tab push   %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040100f <+1>:\tab mov    %rsp,%rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401012 <+4>:\tab sub    $0x10,%rsp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401016 <+8>:\tab lea    -0x4(%rbp),%r8}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040101a <+12>:\tab lea    -0x9(%rbp),%rcx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040101e <+16>:\tab lea    -0x8(%rbp),%rdx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401022 <+20>:\tab mov    $0x40281e,%esi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401027 <+25>:\tab mov    $0x0,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040102c <+30>:\tab callq  0x400cb0 <__isoc99_sscanf@plt>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401031 <+35>:\tab cmp    $0x2,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401034 <+38>:\tab jg     0x40103b <phase_3+45>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401036 <+40>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040103b <+45>:\tab cmpl   $0x7,-0x8(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040103f <+49>:\tab ja     0x401134 <phase_3+294>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401045 <+55>:\tab mov    -0x8(%rbp),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401048 <+58>:\tab jmpq   *0x402840(,%rax,8)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040104f <+65>:\tab mov    $0x69,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401054 <+70>:\tab cmpl   $0x183,-0x4(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040105b <+77>:\tab je     0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401061 <+83>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401066 <+88>:\tab mov    $0x69,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040106b <+93>:\tab jmpq   0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401070 <+98>:\tab mov    $0x72,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401075 <+103>:\tab cmpl   $0x26c,-0x4(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040107c <+110>:\tab je     0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401082 <+116>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401087 <+121>:\tab mov    $0x72,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040108c <+126>:\tab jmpq   0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401091 <+131>:\tab mov    $0x6e,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401096 <+136>:\tab cmpl   $0xe6,-0x4(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040109d <+143>:\tab je     0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010a3 <+149>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010a8 <+154>:\tab mov    $0x6e,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010ad <+159>:\tab jmpq   0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010b2 <+164>:\tab mov    $0x68,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010b7 <+169>:\tab cmpl   $0x2aa,-0x4(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010be <+176>:\tab je     0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010c0 <+178>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010c5 <+183>:\tab mov    $0x68,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010ca <+188>:\tab jmp    0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010cc <+190>:\tab mov    $0x6c,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010d1 <+195>:\tab cmpl   $0x31f,-0x4(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010d8 <+202>:\tab je     0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010da <+204>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010df <+209>:\tab mov    $0x6c,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010e4 <+214>:\tab jmp    0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010e6 <+216>:\tab mov    $0x7a,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010eb <+221>:\tab cmpl   $0x324,-0x4(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010f2 <+228>:\tab je     0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010f4 <+230>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010f9 <+235>:\tab mov    $0x7a,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004010fe <+240>:\tab jmp    0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401100 <+242>:\tab mov    $0x63,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401105 <+247>:\tab cmpl   $0x3ba,-0x4(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040110c <+254>:\tab je     0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040110e <+256>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401113 <+261>:\tab mov    $0x63,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401118 <+266>:\tab jmp    0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040111a <+268>:\tab mov    $0x73,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040111f <+273>:\tab cmpl   $0x21d,-0x4(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401126 <+280>:\tab je     0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401128 <+282>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040112d <+287>:\tab mov    $0x73,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401132 <+292>:\tab jmp    0x40113e <phase_3+304>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401134 <+294>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401139 <+299>:\tab mov    $0x6f,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040113e <+304>:\tab cmp    -0x9(%rbp),%al}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401141 <+307>:\tab je     0x401148 <phase_3+314>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401143 <+309>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401148 <+314>:\tab leaveq }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401149 <+315>:\tab retq   }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+End of assembler dump.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+= \u8220\'93 \u8221\'94}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+*******************************************************************************************************************}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Explanation here}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Dump of assembler code for function phase_4:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401193 <+0>:\tab push   %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401194 <+1>:\tab mov    %rsp,%rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401197 <+4>:\tab sub    $0x10,%rsp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040119b <+8>:\tab lea    -0x8(%rbp),%rcx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040119f <+12>:\tab lea    -0x4(%rbp),%rdx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011a3 <+16>:\tab mov    $0x402b0d,%esi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011a8 <+21>:\tab mov    $0x0,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011ad <+26>:\tab callq  0x400cb0 <__isoc99_sscanf@plt>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011b2 <+31>:\tab cmp    $0x2,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011b5 <+34>:\tab jne    0x4011c2 <phase_4+47>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011b7 <+36>:\tab mov    -0x8(%rbp),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011ba <+39>:\tab sub    $0x2,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011bd <+42>:\tab cmp    $0x2,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011c0 <+45>:\tab jbe    0x4011c7 <phase_4+52>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011c2 <+47>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011c7 <+52>:\tab mov    -0x8(%rbp),%esi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011ca <+55>:\tab mov    $0x7,%edi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011cf <+60>:\tab callq  0x40114a <func4>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011d4 <+65>:\tab cmp    -0x4(%rbp),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011d7 <+68>:\tab je     0x4011de <phase_4+75>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011d9 <+70>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011de <+75>:\tab leaveq }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011df <+76>:\tab nop}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011e0 <+77>:\tab retq   }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+End of assembler dump.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+= \u8220\'93 \u8221\'94}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\brdrb\brdrthtnsg\brdrw50\brdrcf1\brsp42\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{{\field{\*\fldinst HYPERLINK "https://www.youtube.com/watch?v=ZMaJILFpEuQ" }{\fldrslt {\cf9\ul\ulc0\langfe255\alang255\lang255\cf1\rtlch \ltrch\loch\fs24\loch\f5
+https://www.youtube.com/watch?v=ZMaJILFpEuQ}}}}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Explanation here}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Dump of assembler code for function phase_5:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011e1 <+0>:\tab push   %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011e2 <+1>:\tab mov    %rsp,%rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011e5 <+4>:\tab sub    $0x10,%rsp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011e9 <+8>:\tab lea    -0x4(%rbp),%rcx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011ed <+12>:\tab lea    -0x8(%rbp),%rdx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011f1 <+16>:\tab mov    $0x402b0d,%esi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011f6 <+21>:\tab mov    $0x0,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004011fb <+26>:\tab callq  0x400cb0 <__isoc99_sscanf@plt>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401200 <+31>:\tab cmp    $0x1,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401203 <+34>:\tab jg     0x40120a <phase_5+41>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401205 <+36>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040120a <+41>:\tab mov    -0x8(%rbp),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040120d <+44>:\tab and    $0xf,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401210 <+47>:\tab mov    %eax,-0x8(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401213 <+50>:\tab cmp    $0xf,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401216 <+53>:\tab je     0x401242 <phase_5+97>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401218 <+55>:\tab mov    $0x0,%ecx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040121d <+60>:\tab mov    $0x0,%edx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401222 <+65>:\tab add    $0x1,%edx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401225 <+68>:\tab cltq   }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401227 <+70>:\tab mov    0x402880(,%rax,4),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040122e <+77>:\tab add    %eax,%ecx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401230 <+79>:\tab cmp    $0xf,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401233 <+82>:\tab jne    0x401222 <phase_5+65>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401235 <+84>:\tab mov    %eax,-0x8(%rbp)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401238 <+87>:\tab cmp    $0xf,%edx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040123b <+90>:\tab jne    0x401242 <phase_5+97>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040123d <+92>:\tab cmp    -0x4(%rbp),%ecx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401240 <+95>:\tab je     0x401247 <phase_5+102>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401242 <+97>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401247 <+102>:\tab leaveq }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401248 <+103>:\tab retq   }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+End of assembler dump.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+= \u8220\'93 \u8221\'94}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+*******************************************************************************************************************}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Explanation here}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Dump of assembler code for function phase_6:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401249 <+0>:\tab push   %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040124a <+1>:\tab mov    %rsp,%rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040124d <+4>:\tab push   %r14}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040124f <+6>:\tab \tab push   %r13}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401251 <+8>:\tab push   %r12}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401253 <+10>:\tab push   %rbx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401254 <+11>:\tab sub    $0x50,%rsp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401258 <+15>:\tab lea    -0x70(%rbp),%rsi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040125c <+19>:\tab callq  0x4017ab <read_six_numbers>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401261 <+24>:\tab lea    -0x70(%rbp),%r14}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401265 <+28>:\tab mov    $0x0,%r13d}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040126b <+34>:\tab mov    %r14,%r12}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040126e <+37>:\tab mov    (%r14),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401271 <+40>:\tab sub    $0x1,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401274 <+43>:\tab cmp    $0x5,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401277 <+46>:\tab jbe    0x40127e <phase_6+53>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401279 <+48>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040127e <+53>:\tab add    $0x1,%r13d}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401282 <+57>:\tab cmp    $0x6,%r13d}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401286 <+61>:\tab jne    0x40128f <phase_6+70>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401288 <+63>:\tab mov    $0x0,%esi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040128d <+68>:\tab jmp    0x4012d3 <phase_6+138>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040128f <+70>:\tab mov    %r13d,%ebx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401292 <+73>:\tab movslq %ebx,%rax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401295 <+76>:\tab mov    -0x70(%rbp,%rax,4),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401299 <+80>:\tab cmp    %eax,(%r12)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040129d <+84>:\tab jne    0x4012a4 <phase_6+91>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040129f <+86>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012a4 <+91>:\tab add    $0x1,%ebx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012a7 <+94>:\tab cmp    $0x5,%ebx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012aa <+97>:\tab jle    0x401292 <phase_6+73>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012ac <+99>:\tab add    $0x4,%r14}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012b0 <+103>:\tab jmp    0x40126b <phase_6+34>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012b2 <+105>:\tab mov    0x8(%rdx),%rdx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012b6 <+109>:\tab add    $0x1,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012b9 <+112>:\tab cmp    %ecx,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012bb <+114>:\tab jne    0x4012b2 <phase_6+105>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012bd <+116>:\tab jmp    0x4012c4 <phase_6+123>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012bf <+118>:\tab mov    $0x604310,%edx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012c4 <+123>:\tab mov    %rdx,-0x50(%rbp,%rsi,2)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012c9 <+128>:\tab add    $0x4,%rsi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012cd <+132>:\tab cmp    $0x18,%rsi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012d1 <+136>:\tab je     0x4012e8 <phase_6+159>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012d3 <+138>:\tab mov    -0x70(%rbp,%rsi,1),%ecx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012d7 <+142>:\tab cmp    $0x1,%ecx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012da <+145>:\tab jle    0x4012bf <phase_6+118>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012dc <+147>:\tab mov    $0x1,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012e1 <+152>:\tab mov    $0x604310,%edx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012e6 <+157>:\tab jmp    0x4012b2 <phase_6+105>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012e8 <+159>:\tab mov    -0x50(%rbp),%rbx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012ec <+163>:\tab lea    -0x48(%rbp),%rax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012f0 <+167>:\tab lea    -0x20(%rbp),%rsi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012f4 <+171>:\tab mov    %rbx,%rcx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012f7 <+174>:\tab mov    (%rax),%rdx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012fa <+177>:\tab mov    %rdx,0x8(%rcx)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004012fe <+181>:\tab add    $0x8,%rax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401302 <+185>:\tab cmp    %rsi,%rax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401305 <+188>:\tab je     0x40130c <phase_6+195>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401307 <+190>:\tab mov    %rdx,%rcx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040130a <+193>:\tab jmp    0x4012f7 <phase_6+174>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040130c <+195>:\tab movq   $0x0,0x8(%rdx)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401314 <+203>:\tab mov    $0x5,%r12d}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040131a <+209>:\tab mov    0x8(%rbx),%rax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040131e <+213>:\tab mov    (%rax),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401320 <+215>:\tab cmp    %eax,(%rbx)}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401322 <+217>:\tab jge    0x401329 <phase_6+224>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401324 <+219>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401329 <+224>:\tab mov    0x8(%rbx),%rbx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040132d <+228>:\tab sub    $0x1,%r12d}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401331 <+232>:\tab jne    0x40131a <phase_6+209>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401333 <+234>:\tab add    $0x50,%rsp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401337 <+238>:\tab pop    %rbx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401338 <+239>:\tab pop    %r12}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040133a <+241>:\tab pop    %r13}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040133c <+243>:\tab pop    %r14}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040133e <+245>:\tab pop    %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040133f <+246>:\tab retq   }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+End of assembler dump.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+= \u8220\'93 \u8221\'94}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+*******************************************************************************************************************}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Explanation here}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Dump of assembler code for function secret_phase:}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040137b <+0>:\tab push   %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040137c <+1>:\tab \tab mov    %rsp,%rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040137f <+4>:\tab \tab push   %rbx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401380 <+5>:\tab sub    $0x8,%rsp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401384 <+9>:\tab callq  0x4017f1 <read_line>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401389 <+14>:\tab mov    $0xa,%edx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040138e <+19>:\tab mov    $0x0,%esi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401393 <+24>:\tab mov    %rax,%rdi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x0000000000401396 <+27>:\tab callq  0x400c90 <strtol@plt>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040139b <+32>:\tab mov    %rax,%rbx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x000000000040139e <+35>:\tab lea    -0x1(%rax),%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013a1 <+38>:\tab cmp    $0x3e8,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013a6 <+43>:\tab jbe    0x4013ad <secret_phase+50>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013a8 <+45>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013ad <+50>:\tab mov    %ebx,%esi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013af <+52>:\tab mov    $0x604130,%edi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013b4 <+57>:\tab callq  0x401340 <fun7>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013b9 <+62>:\tab test   %eax,%eax}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013bb <+64>:\tab je     0x4013c2 <secret_phase+71>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013bd <+66>:\tab callq  0x401775 <explode_bomb>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013c2 <+71>:\tab mov    $0x4027f8,%edi}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013c7 <+76>:\tab callq  0x400bc0 <puts@plt>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013cc <+81>:\tab callq  0x401914 <phase_defused>}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013d1 <+86>:\tab add    $0x8,%rsp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013d5 <+90>:\tab pop    %rbx}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013d6 <+91>:\tab pop    %rbp}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\fs24\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+0x00000000004013d7 <+92>:\tab retq   }
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+End of assembler dump.}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+= \u8220\'93 \u8221\'94}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+*******************************************************************************************************************}
+\par \pard\plain \s0\nowidctlpar\hyphpar0\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+Bomb 313 by Spencer Milbrandt and Nic Williams}
+\par }

